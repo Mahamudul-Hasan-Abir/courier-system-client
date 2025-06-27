@@ -31,34 +31,44 @@ const links = [
 
 export default function FooterSection() {
   return (
-    <footer className="py-16 md:py-32">
-      <div className="mx-auto max-w-5xl px-6">
+    <footer className="w-full bg-[#f39f39]/90 border-t border-orange-200 shadow-inner mt-16">
+      <div className="mx-auto max-w-6xl px-6 py-12 md:py-20 flex flex-col items-center">
+        {/* Branding */}
         <Link
           href="/"
           aria-label="go home"
-          className="mx-auto  size-20 bg-[#f39f39] rounded-full flex justify-center items-center"
+          className="flex items-center gap-2 group mb-6"
         >
-          <Truck className="size-10 text-white"></Truck>
+          <div className="bg-white rounded-full p-2 shadow-sm border border-orange-200 transition group-hover:scale-105">
+            <Truck className="size-8 text-[#f39f39]" />
+          </div>
+          <span className="ml-2 text-2xl font-extrabold tracking-tight text-white drop-shadow-sm group-hover:text-black transition">
+            Courier<span className="text-black">X</span>
+          </span>
         </Link>
 
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+        {/* Nav Links */}
+        <div className="flex flex-wrap justify-center gap-6 text-base font-medium mb-6">
           {links.map((link, index) => (
             <Link
               key={index}
               href={link.href}
-              className="text-muted-foreground hover:text-primary block duration-150"
+              className="text-white hover:text-black px-3 py-1.5 rounded-md transition bg-white/0 hover:bg-white/20"
             >
               <span>{link.title}</span>
             </Link>
           ))}
         </div>
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
+
+        {/* Social Icons */}
+        <div className="flex flex-wrap justify-center gap-4 text-sm mb-8">
+          {/* X/Twitter */}
           <Link
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X/Twitter"
-            className="text-muted-foreground hover:text-primary block"
+            className="bg-white/10 hover:bg-white/30 rounded-full p-2 transition text-white hover:text-[#f39f39] shadow-sm"
           >
             <svg
               className="size-6"
@@ -73,12 +83,13 @@ export default function FooterSection() {
               ></path>
             </svg>
           </Link>
+          {/* LinkedIn */}
           <Link
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-muted-foreground hover:text-primary block"
+            className="bg-white/10 hover:bg-white/30 rounded-full p-2 transition text-white hover:text-[#f39f39] shadow-sm"
           >
             <svg
               className="size-6"
@@ -93,12 +104,13 @@ export default function FooterSection() {
               ></path>
             </svg>
           </Link>
+          {/* Facebook */}
           <Link
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            className="text-muted-foreground hover:text-primary block"
+            className="bg-white/10 hover:bg-white/30 rounded-full p-2 transition text-white hover:text-[#f39f39] shadow-sm"
           >
             <svg
               className="size-6"
@@ -113,12 +125,13 @@ export default function FooterSection() {
               ></path>
             </svg>
           </Link>
+          {/* Threads */}
           <Link
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Threads"
-            className="text-muted-foreground hover:text-primary block"
+            className="bg-white/10 hover:bg-white/30 rounded-full p-2 transition text-white hover:text-[#f39f39] shadow-sm"
           >
             <svg
               className="size-6"
@@ -138,12 +151,13 @@ export default function FooterSection() {
               ></path>
             </svg>
           </Link>
+          {/* Instagram */}
           <Link
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="text-muted-foreground hover:text-primary block"
+            className="bg-white/10 hover:bg-white/30 rounded-full p-2 transition text-white hover:text-[#f39f39] shadow-sm"
           >
             <svg
               className="size-6"
@@ -158,12 +172,13 @@ export default function FooterSection() {
               ></path>
             </svg>
           </Link>
+          {/* TikTok */}
           <Link
             href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
-            className="text-muted-foreground hover:text-primary block"
+            className="bg-white/10 hover:bg-white/30 rounded-full p-2 transition text-white hover:text-[#f39f39] shadow-sm"
           >
             <svg
               className="size-6"
@@ -179,9 +194,13 @@ export default function FooterSection() {
             </svg>
           </Link>
         </div>
-        <span className="text-muted-foreground block text-center text-sm">
-          {" "}
-          © {new Date().getFullYear()} Tailark, All rights reserved
+
+        {/* Divider */}
+        <div className="w-full border-t border-orange-200 my-4" />
+
+        {/* Copyright */}
+        <span className="text-white/80 block text-center text-sm font-medium">
+          © {new Date().getFullYear()} CourierX. All rights reserved.
         </span>
       </div>
     </footer>
