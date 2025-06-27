@@ -10,7 +10,7 @@ const SecondaryHero = () => {
     <section className="relative bg-white overflow-hidden">
       {/* Decorative background shape */}
       <div className="absolute -top-24 right-0 w-[350px] h-[350px] bg-[#f39f39]/20 rounded-full blur-2xl z-0" />
-      <div className="flex flex-col md:flex-row w-full max-w-6xl py-14 md:py-20 mx-auto items-center md:items-stretch relative z-10">
+      <div className="flex flex-col md:flex-row w-full max-w-5xl py-14 md:py-20 mx-auto items-center md:items-stretch relative z-10">
         {/* Lottie: left on desktop, top on mobile */}
         <div className="w-full md:w-1/2 flex justify-center items-center order-1 mb-10 md:mb-0">
           <Lottie

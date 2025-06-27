@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="relative bg-gradient-to-br from-[#40494f] via-[#40494f] to-[#23272b] overflow-hidden">
       {/* Decorative background shape */}
       <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-[#f39f39]/20 rounded-full blur-3xl z-0" />
-      <div className="flex flex-col md:flex-row w-full max-w-6xl text-white py-16 md:py-24 mx-auto items-center md:items-stretch relative z-10">
+      <div className="flex flex-col md:flex-row w-full max-w-5xl text-white py-16 md:py-24 mx-auto items-center md:items-stretch relative z-10">
         {/* Lottie on right for desktop, top for mobile */}
         <div className="w-full md:w-1/2 flex justify-center items-center order-1 md:order-2 mb-10 md:mb-0">
           <Lottie
@@ -22,7 +22,7 @@ const Hero = () => {
           />
         </div>
         {/* Text and form on left for desktop, bottom for mobile */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center order-2 md:order-1 px-4">
+        <div className="w-full md:w-1/2 flex flex-col justify-center order-2 md:order-1">
           {/* Branding */}
           <Link href="/" className="flex items-center gap-2 mb-6 group">
             <div className="bg-[#f39f39] rounded-full p-2 shadow-sm border border-orange-200 group-hover:scale-105 transition">

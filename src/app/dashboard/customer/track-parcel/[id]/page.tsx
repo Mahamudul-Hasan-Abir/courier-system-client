@@ -72,7 +72,7 @@ const TrackParcel = () => {
   const fetchParcel = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5300/api/v1/parcel/${parcelId}`
+        `https://courier-system-server.vercel.app/api/v1/parcel/${parcelId}`
       );
       const data = await response.json();
 

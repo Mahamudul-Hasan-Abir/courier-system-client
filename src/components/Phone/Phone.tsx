@@ -9,7 +9,7 @@ const Phone = () => {
     <section className="relative bg-gradient-to-br from-[#23272b] via-[#40494f] to-[#40494f] overflow-hidden">
       {/* Decorative background shape */}
       <div className="absolute -top-24 right-0 w-[300px] h-[300px] bg-[#f39f39]/20 rounded-full blur-2xl z-0" />
-      <div className="flex flex-col md:flex-row w-full max-w-6xl text-white py-16 md:py-20 mx-auto items-center md:items-stretch relative z-10">
+      <div className="flex flex-col md:flex-row w-full max-w-5xl text-white py-16 md:py-20 mx-auto items-center md:items-stretch relative z-10">
         {/* Phone image: right for desktop, top for mobile */}
         <div className="w-full md:w-1/3 flex justify-center items-center order-1 md:order-2 mb-10 md:mb-0 relative">
           <div className="relative w-[220px] h-[420px] md:w-[260px] md:h-[480px] rounded-3xl shadow-2xl overflow-hidden border-4 border-white/10 bg-white/5">

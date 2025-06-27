@@ -27,7 +27,7 @@ const DeliveryItems = () => {
     <section className="relative w-full overflow-hidden bg-gradient-to-br from-[#f9fafb] via-white to-[#f9fafb] py-20">
       {/* Decorative background shape */}
       <div className="absolute -top-24 left-0 w-[300px] h-[300px] bg-[#f39f39]/10 rounded-full blur-2xl z-0" />
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
+      <div className="max-w-5xl mx-auto  relative z-10">
         {/* Branding */}
         <div className="py-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-3 drop-shadow-lg">

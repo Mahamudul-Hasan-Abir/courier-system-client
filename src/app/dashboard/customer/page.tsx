@@ -54,12 +54,15 @@ export default function CustomerDashboardHome() {
     }
 
     try {
-      const response = await fetch("http://localhost:5300/api/v1/parcel/my", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://courier-system-server.vercel.app/api/v1/parcel/my",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const data = await response.json();
 

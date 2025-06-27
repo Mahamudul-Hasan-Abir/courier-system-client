@@ -86,14 +86,17 @@ const CreateOrderPage = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5300/api/v1/parcel", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://courier-system-server.vercel.app/api/v1/parcel",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 

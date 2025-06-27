@@ -32,7 +32,7 @@ const links = [
 export default function FooterSection() {
   return (
     <footer className="w-full bg-[#f39f39]/90 border-t border-orange-200 shadow-inner mt-16">
-      <div className="mx-auto max-w-6xl px-6 py-12 md:py-20 flex flex-col items-center">
+      <div className="mx-auto max-w-5xl px-6 py-12 md:py-20 flex flex-col items-center">
         {/* Branding */}
         <Link
           href="/"

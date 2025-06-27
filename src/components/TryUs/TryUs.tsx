@@ -61,7 +61,7 @@ const TryUs = () => {
         </Button>
       </div>
       {/* Features Grid */}
-      <div className="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 relative z-10">
         {features.map((feature) => (
           <div
             key={feature.title}
