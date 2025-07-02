@@ -146,7 +146,7 @@ const CreateOrderPage = () => {
 
   return (
     <RoleProtectedRoute allowedRoles={["customer"]}>
-      <div className="max-w-5xl mx-auto p-6">
+      <div className="max-w-5xl mx-auto">
         <div className="mb-8">
           <Link
             href="/dashboard/customer"

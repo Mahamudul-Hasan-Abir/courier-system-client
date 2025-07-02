@@ -22,9 +22,8 @@ const Hero = () => {
           />
         </div>
         {/* Text and form on left for desktop, bottom for mobile */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center order-2 md:order-1">
-          {/* Branding */}
-          <Link href="/" className="flex items-center gap-2 mb-6 group">
+        <div className="w-full md:w-1/2 flex flex-col justify-center order-2 md:order-1 ">
+          <Link href="/" className="flex items-center gap-2 mb-6 group ">
             <div className="bg-[#f39f39] rounded-full p-2 shadow-sm border border-orange-200 group-hover:scale-105 transition">
               <Truck className="size-7 text-white" />
             </div>
@@ -41,7 +40,7 @@ const Hero = () => {
             delivery. Experience the future of logistics with{" "}
             <span className="text-[#f39f39] font-semibold">CourierX</span>.
           </p>
-          <form className="flex flex-col md:flex-row gap-3 md:gap-5 w-full max-w-md mx-auto md:mx-0">
+          <form className="flex flex-col md:flex-row gap-3 md:gap-5 w-full max-w-md mx-auto md:mx-0 ">
             <Input
               type="email"
               className="w-full bg-white/90 text-black placeholder:text-gray-400 focus:ring-2 focus:ring-[#f39f39] focus:border-[#f39f39] transition rounded-md shadow"
